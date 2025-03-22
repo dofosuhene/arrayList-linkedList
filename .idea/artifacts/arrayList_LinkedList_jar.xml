@@ -1,8 +1,8 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="arrayList-LinkedList:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/arrayList_LinkedList_jar</output-path>
-    <root id="archive" name="arrayList-LinkedList.jar">
-      <element id="module-output" name="arrayList-LinkedList" />
+  <artifact type="jar" name="arrayList-linkedList:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/arrayList_linkedList_jar</output-path>
+    <root id="archive" name="arrayList-linkedList.jar">
+      <element id="module-output" name="arrayList-linkedList" />
     </root>
   </artifact>
 </component>

@@ -81,6 +81,16 @@ public class ListTester {
         }
         return liste;
     }
+    //elemente in string zusammen mit stringbuilider
+    public static String listeIteratorStringBuilder(List<Integer> list) {
+        if(list.isEmpty()) return "";
+        ListIterator<Integer> lit = list.listIterator();
+        StringBuilder sb = new StringBuilder();
+        while(lit.hasNext()) {
+            sb.append(lit.next()).append(",");
+        }
+        return sb.toString();
+    }
 
     public static void main(String[] args) {
         List<Integer> linked = new LinkedList<>();
@@ -170,6 +180,17 @@ public class ListTester {
         System.out.println("Zeit für die LinkedList (ms): " + (ende-start));
         start = System.currentTimeMillis();
         liste = listeIterator(array);
+        ende = System.currentTimeMillis();
+        System.out.println("Zeit für die ArrayList (ms): " + (ende-start));
+        System.out.println("");
+
+        System.out.println("Auflisten mit Hilfe Stringbuilder");
+        start = System.currentTimeMillis();
+        liste = listeIteratorStringBuilder(linked);
+        ende = System.currentTimeMillis();
+        System.out.println("Zeit für die LinkedList (ms): " + (ende-start));
+        start = System.currentTimeMillis();
+        liste = listeIteratorStringBuilder(array);
         ende = System.currentTimeMillis();
         System.out.println("Zeit für die ArrayList (ms): " + (ende-start));
         System.out.println("");
